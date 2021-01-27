@@ -13,9 +13,9 @@ import os
 from keras import backend as K
 from keras.optimizers import SGD
 
-#set C as true to train and execute CNN C
-#set C as false and D as true to train and execute CNN D
-#set C as false and D as false to train and execute CNN E
+#set D as true to train and execute CNN D
+#set D as false and E as true to train and execute CNN E
+#set D as false and E as false to train and execute CNN F
 D = True
 E = False
 
