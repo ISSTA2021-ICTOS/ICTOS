@@ -16,8 +16,8 @@ from keras.optimizers import SGD
 #set C as true to train and execute CNN C
 #set C as false and D as true to train and execute CNN D
 #set C as false and D as false to train and execute CNN E
-C = True
-D = False
+D = True
+E = False
 
 train = 24000 
 test = 33500
@@ -47,8 +47,8 @@ y_test_cat = keras.utils.to_categorical(y_test, num_classes)
 
 model = Sequential()
 
-if C:
-    print("model C")
+if D:
+    print("model D")
     model.add(Conv2D(30, kernel_size=3, activation='relu', input_shape=x_train.shape[1:]))
     model.add(MaxPooling2D(2,2))
     model.add(Conv2D(15, kernel_size=3, activation='relu'))
@@ -59,8 +59,8 @@ if C:
 
     model.compile(loss=keras.losses.categorical_crossentropy, optimizer=keras.optimizers.Adadelta(), metrics=['accuracy'])
 
-elif D:
-    print("model D") 
+elif E:
+    print("model E") 
     model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(32,32,3)))
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Conv2D(64, kernel_size=(3, 3), activation='relu'))
@@ -75,7 +75,7 @@ elif D:
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 else:
-    print("model E")
+    print("model F")
     model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same', input_shape=(32, 32, 3)))
     model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
     model.add(MaxPooling2D((2, 2)))
