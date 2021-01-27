@@ -1,8 +1,6 @@
 # ICTOS
-This repository is the supplemental material related to a ISSTA 2021 submission.
-In this repository, the code to repeat the experiments is available.
-We reported the datasets to completely reproduce the experiments on MNIST.
-The code to repeat the experiments on CIFAR10 is also available.
+This repository is the code of ICTOS related to an ISSTA 2021 submission.
+In this repository, the code to repeat the experiments on MNIST and CIFAR10 is available.
 
 The python code in MNISTCNNs.py and CIFAR10CNNs.py can be executed to generate the .csv files containing the training, validation, and test sets ready to be submitted to ICTOS.
 
