@@ -99,7 +99,14 @@ x_test = x_test.astype('float32')
 x_train /= 255
 x_test /= 255
 
-model.fit(x_train, y_train_cat,
+if E:
+    model.fit(x_train, y_train,
+              batch_size=batch_size,
+              epochs=epochs,
+              validation_data=(x_test, y_test),
+              shuffle=True)
+else:
+    model.fit(x_train, y_train_cat,
               batch_size=batch_size,
               epochs=epochs,
               validation_data=(x_test, y_test_cat),
