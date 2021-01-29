@@ -117,7 +117,11 @@ X_prop_test = X_prop_test.astype('float32')
 X_prop_test /= 255
 y_prop_test_cat = keras.utils.to_categorical(y_prop_test, num_classes)
 
-scores = model.evaluate(X_prop_test, y_prop_test_cat, verbose=1)
+if E:
+    scores = model.evaluate(X_prop_test, y_prop_test, verbose=1)
+else:
+    scores = model.evaluate(X_prop_test, y_prop_test_cat, verbose=1)
+
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
