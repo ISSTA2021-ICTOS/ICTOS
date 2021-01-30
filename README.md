@@ -8,3 +8,4 @@ The implementation of ICTOS provideed need an installation of KNIME (v4.0.0).
 After the import of the .knar file into KNIME workspace the .csv file generated can be inserted in input in the "CSV Reader" blocks according to their tags.
 With the "Double Configuration" blocks the minimum confidence and support can be setted.
 The "CSV Writer" blocks can be configured with the path where the CSV containing the output of the testing session can be saved.
+The "Java Snippet" block, named "IDI", inside the "ICTOS" metanode can be used to switch the partitioning criterion uncommenting the corresponding code.
