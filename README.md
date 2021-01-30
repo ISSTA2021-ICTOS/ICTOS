@@ -9,3 +9,4 @@ After the import of the .knar file into KNIME workspace the .csv file generated 
 With the "Double Configuration" blocks the minimum confidence and support can be setted.
 The "CSV Writer" blocks can be configured with the path where the CSV containing the output of the testing session can be saved.
 The "Java Snippet" block, named "IDI", inside the "ICTOS" metanode can be used to switch the partitioning criterion uncommenting the corresponding code.
+The "Partitioning" blocks, "Node 15" and "Node 77" (inside "CRO" metanode), can be used to change the test set size for ICTOS and CRO respectively. 
