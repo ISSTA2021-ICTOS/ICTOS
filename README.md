@@ -1,5 +1,5 @@
 # ICTOS
-This repository is the code of ICTOS related to an ISSTA 2021 submission.
+This repository is the code of ICTOS related to an ISSRE 2021 submission.
 In this repository, the code to repeat the experiments on MNIST and CIFAR10 is available.
 
 The python code in MNISTCNNs.py and CIFAR10CNNs.py can be executed to generate the .csv files containing the training, validation, and test sets ready to be submitted to ICTOS. All the requirements needed to execute the Python code are listed in the requirements.txt file.
